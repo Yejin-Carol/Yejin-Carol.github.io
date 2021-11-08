@@ -5,38 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beach Cleanup Activity</title>
+    <style>
+      body {
+          margin: 0;
+      }
+      /* selector */
+      /* id > class id는 한번만 등장, 중복 안됨!*/
+      #active {
+          color: red; 
+      }
+      /* .class: grouping */
+      .seen {
+          color:gray;
+      }
+      a {
+          /* declaration(property:value) */
+          color:black; 
+          text-decoration: none;
+      }
+      h1 {
+          font-size:45px;
+          text-align: center;
+          border-bottom: 1px solid gray;
+          margin:0;
+          padding: 20px;
+      }    
+      #grid ol {
+          border-right:1px solid gray;
+          width: 120px;
+          margin: 0;
+          padding: 20px;
+      }
+      #grid {
+       display: grid;
+       grid-template-columns: 160px 1fr;
+      }
+      #grid #article {
+        padding-left: 25px;
+
+      }
+  
+  </style>
+  
 </head>
 <body>
 <h1><a href="index.html">Beach CleanUp</a></h1>
+<div id="grid">
+  <ol>    
+  <li><a href ="1.html" class="seen" id="active">Beach Clean Up</a></li>
+  <li><a href ="2.html" class="seen">Location</a></li>
+  <li><a href ="3.html">Booking</a></li>
+  <li><a href ="4.html">Board</a></li>
+  </ol>
+  <!-- ol(ordered list), ul(unordered list) -->
+  <div id="article">
 
-<ol>    
-<li><a href ="1.html">Beach Clean Up</a></li>
-<li><a href ="2.html">Location</a></li>
-<li><a href ="3.html">Booking</a></li>
-<li><a href ="4.html">Board</a></li>
-</ol>
-<!-- ol(ordered list), ul(unordered list) -->
-
-
-<h2>Beach Cleanup Activities in Korea</h2>
-<h3>How to join? 어떻게 참여할 수 있나요?</h3>
-<p style="margin-top:40px;"><a href="http://www.beachapedia.org/Beach_Cleanups#:~:text=Beach%20cleanups%20are%20volunteer%20activities,the%20coastal%20and%20ocean%20ecosystem." target="_blank" title="html5 specification">Beach Clean</a> is a great activity to <u>save our planet</u>! 
-You can simply <strong>join</strong> any available events happening on a beach near your town.
-</p>
-<p>&nbsp;</p>
-<!-- img Attribute -->
-<img src="resources/beachcleaup.jpg">
-
-<h3>Locations</h3>
-<p>Beaches in Korea-Kakao API</p>
-
-<parent>
-    <child></child>
-</parent>
-
-
-
-
-    
+  <h2>Beach Cleanup Activities in Korea</h2>
+  <h3>What is Beacn Cleanup?</h3>
+  <p>
+    Beach cleanups are volunteer activities that take place on a regular basis along coastlines around the world. Environmental groups, civic organizations and individual beachgoers collect beach trash to make the beach a nicer, safer place and also to improve the coastal and ocean ecosystem.</p>
+  </div>
+</div>
 </body>
 </html>

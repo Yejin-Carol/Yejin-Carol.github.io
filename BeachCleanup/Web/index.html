@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Cleanup Activity</title>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4471Z8876"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-M4471Z8876');
+</script> -->
+<style>
+    body {
+        margin: 0;
+    }
+    /* selector */
+    /* id > class id는 한번만 등장, 중복 안됨!*/
+    #active {
+        color: red; 
+    }
+    /* .class: grouping */
+    .seen {
+        color:gray;
+    }
+    a {
+        /* declaration(property:value) */
+        color:black; 
+        text-decoration: none;
+    }
+    h1 {
+        font-size:45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin:0;
+        padding: 20px;
+    }    
+    ol {
+        border-right:1px solid gray;
+        width: 120px;
+        margin: 0;
+        padding: 20px;
+    }
+
+</style>
+</head>
+<body>
+<h1><a href="index.html">Beach CleanUp</a></h1>
+<ol>    
+<li><a href ="1.html" class="seen">Beach Clean Up</a></li>
+<li><a href ="2.html" class="seen" id="active">Location</a></li>
+<li><a href ="3.html" style="color:red;text-decoration:underline">Booking</a></li>
+<li><a href ="4.html">Board</a></li>
+</ol>
+<!-- ol(ordered list), ul(unordered list) -->
+
+
+<h2>Beach Cleanup Activities in Korea</h2>
+<h3>What is Beacn Cleanup?</h3>
+<p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WkP2kqN1st0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+
+<h3>How to join? 어떻게 참여할 수 있나요?</h3>
+<p style="margin-top:40px;"><a href="http://www.beachapedia.org/Beach_Cleanups#:~:text=Beach%20cleanups%20are%20volunteer%20activities,the%20coastal%20and%20ocean%20ecosystem." target="_blank" title="html5 specification">Beach Clean</a> is a great activity to <u>save our planet</u>! 
+You can simply <strong>join</strong> any available events happening on a beach near your town.
+</p>
+
+<p>&nbsp;</p>
+<!-- img Attribute -->
+<img src="resources/beachcleaup.jpg">
+
+<h3>Locations</h3>
+<p>Beaches in Korea-Kakao API</p>
+
+
+</body>
+</html>

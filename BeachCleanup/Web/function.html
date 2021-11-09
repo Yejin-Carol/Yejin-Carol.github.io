@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function</h1>
+    <h2>Basic</h2>
+
+    <ul>
+        <script>
+            function two(){
+                document.write('<li>2-1</li>');
+                document.write('<li>2-2</li>');
+            }
+            document.write('<li>1</li>');
+            two();
+            document.write('<li>3</li>');
+            two();
+        </script>
+    </ul>
+    <h2>Parameter & Argument</h2>
+    <script>
+        function onePlusOne(){
+           document.write(1+1+'<br>');    
+        }
+        onePlusOne();
+        function sum(left, right){//매개변수, parameter
+            document.write(left+right+'<br>');
+        }
+        
+        function sumColorRed(left, right){//매개변수, parameter
+            document.write('<div style="color:red">'+left+right+'</div><br>');
+        }
+        sum(2, 3);// 2,3 인자 (Argument) 함수 
+        sumColorRed(2,3); //5
+        sum(3, 4);
+        </script>
+        <h2>Return</h2>
+        <script>
+            function sum2(left, right){
+                return left+right;
+            }
+            document.write(sum2(2,3)+'<br>');
+            document.write('<div style="color:red">' +sum2(2,3)+'</div>');
+            document.write('<div style="font-size:3rem;">'+sum2(2,3)+'</div>');
+        </script>
+
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+        var coworkers = {
+            "programmer":"lee",
+            "designer":"kim"
+        };
+        document.write("programmer : "+coworkers.programmer+"<br>");
+        document.write("designer : "+coworkers.designer+"<br>");
+        coworkers.bookkeeper = "moo";
+        document.write("bookkeeper : "+coworkers.bookkeeper+"<br>");
+        coworkers["data scientist"] = "chang";
+        document.write("data scientist: " +coworkers["data scientist"]+"<br>");
+    </script>
+    <h2>Iterate</h2>
+    <script>
+        for(var key in coworkers){
+            document.write(key+' : ' +coworkers[key]+'<br>');
+        }
+    </script>
+    <h2>Property & Method</h2>
+    <script>
+        coworkers.showAll = function(){
+            for(var key in this){
+            document.write(key+' : ' +this[key]+'<br>');
+            }
+        }
+        coworkers.showAll();
+    </script>
+
+
+</body>
+</html>
